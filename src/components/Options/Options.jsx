@@ -1,5 +1,7 @@
 /** @format */
 
+import Options from './components/Options/Options'
+
 const Option = (props) => {
 	return (
 		<div>

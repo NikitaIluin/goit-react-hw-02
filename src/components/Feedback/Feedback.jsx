@@ -1,5 +1,7 @@
 /** @format */
 
+import Feedback from './components/Feedback/Feedback'
+
 const Feedback = ({
 	goodButton,
 	neutralButton,
