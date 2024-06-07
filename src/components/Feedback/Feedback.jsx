@@ -1,29 +1,25 @@
-import css from "./Feedback.module.css";
-import Options from "../Options/Options";
+/** @format */
 
 const Feedback = ({
-  good,
-  neutral,
-  bad,
-  goodFeedback,
-  neutralFeedback,
-  badFeedback,
+	goodButton,
+	neutralButton,
+	badButton,
+	totalProps,
+	relative,
 }) => {
-  return (
-    <div className={css.container}>
-      <ul className={css.list}>
-        <li className={css.item}>
-          {good}: <span className={css.number}>{goodFeedback}</span>
-        </li>
-        <li className={css.item}>
-          {neutral}: <span className={css.number}>{neutralFeedback}</span>
-        </li>
-        <li className={css.item}>
-          {bad}: <span className={css.number}>{badFeedback}</span>
-        </li>
-      </ul>
-    </div>
-  );
+	return (
+		<div
+			className="feedback"
+			id="myList">
+			<ul className="feed-list">
+				<li>Good:{goodButton} </li>
+				<li>Neutral:{neutralButton} </li>
+				<li>Bad: {badButton}</li>
+				<li>Total:{totalProps}</li>
+				<li>Positivity Rate: {relative}</li>
+			</ul>
+		</div>
+	);
 };
 
 export default Feedback;

@@ -1,12 +1,15 @@
-import css from "./Description.module.css";
+/** @format */
 
-const Description = ({ title, description }) => {
-  return (
-    <div className={css.container}>
-      <h1 className={css.title}>{title}</h1>
-      <p className={css.description}>{description}</p>
-    </div>
-  );
+const Description = () => {
+	return (
+		<div>
+			<h1>Sip Happens Cafe</h1>
+			<p>
+				Please leave your feedback about our service by selecting one of the options
+				below.
+			</p>
+		</div>
+	);
 };
 
 export default Description;
