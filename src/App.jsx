@@ -38,7 +38,6 @@ function App() {
 		window.localStorage.setItem("saved-feedback,", JSON.stringify(feed));
 		console.log(feed);
 	}, [feed]);
-
 	return (
 		<div className="app-style">
 			<Description />
